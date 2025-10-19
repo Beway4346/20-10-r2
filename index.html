@@ -10,9 +10,17 @@
   <h1>💐 Chúc mừng Ngày Phụ Nữ Việt Nam 💕</h1>
   <p id="message">Chúc mẹ luôn khỏe mạnh và hạnh phúc 🌸</p>
 
- <audio id="bgm" autoplay loop>
+ <audio id="bgm" loop>
   <source src="style/nhac.mp3" type="audio/mpeg">
 </audio>
+
+<script>
+  document.addEventListener("click", () => {
+    const bgm = document.getElementById("bgm");
+    bgm.play();
+  }, { once: true });
+</script>
+
 
   <script src="./style/script.js"></script>
 </body>
